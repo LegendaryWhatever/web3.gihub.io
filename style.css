@@ -1,0 +1,325 @@
+*::before, *::after{
+    box-sizing: border-box;
+}
+ul[class],ol[class]{
+    padding: 0;
+}
+body, h1,h2,h3,h4,h5,h6,p,ul[class],ol[class],li,figure,figcaption,blockquote,dl,dd{
+    margin: 0;
+}
+body{
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+ul[class],ol[class]{list-style: none;}
+a:not([class]){text-decoration-skip-ink: auto;}
+img{
+    max-width: 100%;
+    display: block;
+}
+article>*+*{
+    margin-top: 1em;
+}
+input, button,textarea,select{
+    font: inherit;
+}
+@media(prefers-reduced-motion: reduce){
+    *{
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Mono:wght@100&display=swap');
+
+
+body{
+    background-color: #f1f1f1;
+    font-family: 'Montserrat';
+}
+.wrapper /* оболочка экрана */
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+}
+
+.container{
+}
+
+/* Шапка */
+
+.header{
+    background-color:black;
+    background: linear-gradient(135deg ,rgba(255, 0, 0, 0.8) 15%, rgba(0, 0, 255, 0.8) 40%, rgba(255, 166, 0, 0.8) 70%);
+    height: 80px;
+}
+.header_body{
+}
+.header_item{
+    display: inline-flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1{
+    padding: 0 14px;
+}
+.header a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #f1f1f1
+}
+.logo{
+    
+    height: 30px;
+    justify-self: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    background-color: black;
+    background: linear-gradient(45deg,rgba(255, 0, 0, 0.6) 15%, rgba(0, 0, 255, 0.6) 40%, rgba(255, 166, 0, 0.6) 70%);
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu li{
+    padding: 5px 0;
+    color: white;
+}
+.menu a{
+    color: white;
+    border-bottom: 1px solid red;
+    text-decoration: none;
+}
+.menu li:before{
+    content:"\2022";
+    color:red;
+}
+.menu li:last-child::before{
+    content:" ";
+}
+.menu p{
+    color: white;
+    font-style: italic;
+}
+@media(min-width:1024px){
+    .menu ul{
+        flex-direction: row;
+    }
+    .menu li{
+        padding: 15px 20px;
+    }
+
+}
+
+/* Основная часть */
+
+.content {
+    flex: 1 1 auto;
+}
+.colums{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.block{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dedede;
+    box-shadow: 0 5px 5px 0 #dedede;
+    background-color: white;
+    width:100%;
+}
+.block:hover{
+}
+.block span{
+    color:red;
+    font-size:20px;
+}
+.block_row{
+}
+.block_item{
+    padding: 0 30px;
+    padding-bottom: 15px;
+}
+
+.block h2{
+    margin-top: 10px;
+    text-align: center;
+}
+.content_title{
+    font-size: 10px;
+}
+.line{
+    max-width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+}
+.giper{
+    order: 0;
+}
+.forma{
+    order: 1;
+}
+.tabl{
+    order: 2;
+}
+@media(min-width:1024px){
+    .colums{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .block{
+        width: 48%;
+
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out;
+    }
+    .block:hover{
+        box-shadow: 15px 15px 15px 0 #dedede;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+    .forma{
+        order: 2;
+    }
+    .tabl{
+        order: 1;
+    }
+}
+
+.table{
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width:100%;
+}
+td{
+    border-radius: 5px 0px 5px 0px;
+}
+caption{
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(red,white,green);
+    font-family: 'Dancing Script', cursive;
+    color: #2b6f2b;
+    padding: 5px 15px;
+}
+tr:nth-child(even){
+    background: linear-gradient(rgba(255, 0, 0), rgba(0, 0, 255), rgba(255, 166, 0));
+    color: white;
+    font-weight: 700;
+}
+tr:nth-child(odd){
+    background: linear-gradient( red,white,green);
+}
+/* Подвал */
+footer{
+    background: linear-gradient( red,white,green);
+    flex: 0 0 auto;
+}
+
+.footer__row {
+    display: flex;
+    height: 60px;
+    justify-content: center; /* выравнить по горизонтали */
+    align-items: center; /* выравнить по вертикали */
+}
+.footer__text {
+    color: black;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer a{
+    text-decoration: none;
+    color: red;
+    border-bottom: 2px solid green;
+}
+
+@media (min-width: 640px){
+    .container{
+    }
+    .header{
+        height: 100px;
+        background-color: white;
+    }
+    .logo{
+        height: 60px;
+    }
+
+
+}
+
+@media (min-width: 1024px){
+    .container{
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .header{
+        height: 120px;
+    }
+}
+form{
+    font-size:14px;
+}
+form h2{
+    font-size:25px;
+}
+
+input[name=field-name], input[name=field-email]{
+    padding: 5px 15px;
+}
+input[name=field-name], input[name=field-email]:active{
+    border: 1px solid blue;
+}
+input[type=submit]{
+    margin-left: 90px;
+    padding: 10px;
+    width: 50%;
+    color: white;
+    font-weight: bolder;
+    border: 0 none;
+    background: linear-gradient( 45deg, green, white,red,blue, orange, white);
+    border-radius: 50px;
+}
+input[type=submit]:hover{
+    animation: rotate-gradient 0.35s infinite;
+    background: linear-gradient( 45deg, green, white,red,blue, orange, white);
+}
+input[type=submit]::before{
+}
+@keyframes rotate-gradient {
+    0% {
+      background-image: linear-gradient(45deg, green, white,red,blue, orange, white);
+    }
+    /* Adding a step in the middle */
+    20% {
+      background-image: linear-gradient(90deg, green, white,red,blue, orange, white);
+    }
+    40% {
+      background-image: linear-gradient(135deg, green, white,red,blue, orange, white);
+    }
+    60% {
+      background-image: linear-gradient(180deg, green, white,red,blue, orange, white);
+    }
+    80% {
+      background-image: linear-gradient(225deg, green, white,red,blue, orange, white);
+    }
+    100% {
+      background-image: linear-gradient(270deg, green, white,red,blue, orange, white);
+    }
+  }
