@@ -1,0 +1,202 @@
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Задание3 для WEB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"> <!-- указатель пути на файл стилей -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header_body">
+                    <div class="header_item">
+                        <img class="logo" src="img/logo.png" alt="Здесь было лого">
+                        <h1><a href="http://vk.com/gaya_jk">Работу выполнила...</a></h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div>
+            <nav class="menu">
+                <div class="container">
+                    <ul>
+                        <li><a href="#form"> Форма </a></li>
+                        <li><a href="#table"> Таблица </a></li>
+                        <li><a href="#footer"> Подвал </a></li>
+                        <li>Для связи: 8-(918)-039-26-64</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <div class="colums">
+                    <div class="block giper">
+                        <div class="block_row">
+                            <div class="block_item">
+                                <h2>Гипперссылки</h2>
+                                <hr class="line">
+                                <br><a HREF="http://example.com"> гипперссылка example.com </a>
+                                <br><a HREF="https://example.com"> гипперссылка example.com c https </a>
+                                <br><a HREF="ftp://wikipedia.org"> ftp без авторизации </a>
+                                <br><a HREF="ftp://admin:2206@wikipedia.org"> ftp с авторизацией </a>
+                                <br><a HREF="https://www.kubsu.ru/ru/education"> фрагмент некоторого сайта </a>
+                                <br><a href="#form"> Фрагмент текущей страницы </a>
+                                <br><a href="https://youtu.be/8R1zgn2iZVQ?t=105&lang=ru"> Cсылку с двумя параметрами в
+                                    URL </a><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block tabl">
+                        <div class="block_row">
+                            <div class="block_item">
+                                <h2>Таблица</h2>
+                                <hr class="line">
+                                <table class="table">
+                                    <caption>My personal Italian-Armenian calendar 2020</caption>
+                                    <tr>
+                                        <td>ПН</td>
+                                        <td>ВТ</td>
+                                        <td>СР</td>
+                                        <td>ЧТ</td>
+                                        <td>ПТ</td>
+                                        <td>СБ</td>
+                                        <td>ВС</td>
+                                    </tr>
+                                    <tr>
+                                        <td> </td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                        <td>11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                        <td>25</td>
+                                        <td>26</td>
+                                        <td>27</td>
+                                    </tr>
+                                    <tr>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                        <td>31</td>
+                                        <td colspan="3"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block forma">
+                        <div class="block_row">
+                            <div class="block_item">
+                                <h2>Форма</h2>
+                                <hr class="line">
+                                <form action="/send" method="POST">
+                                    <label>
+                                        Имя:<br />
+                                        <input name="field-name" placeholder="Введите имя" />
+                                    </label><br />
+
+                                    <label>
+                                        e-mail:<br />
+                                        <input name="field-email" placeholder="name@example.com" type="email">
+                                    </label><br />
+
+                                    <label>
+                                        Дата рождения:<br />
+                                        <input name="field-text" value="ДД.ММ.ГГ" type="text" />
+                                    </label><br />
+
+                                    Пол:<br>
+                                    <label><input type="radio" checked="checked" name="radio-sex" value="Значение1" />
+                                        М</label>
+                                    <label><input type="radio" name="radio-sex" value="Значение2" />
+                                        Ж</label><br />
+
+                                    Количество конечностей:<br>
+                                    <label><input type="radio" checked="checked" name="radio-limb" value="Значение1" />
+                                        0</label>
+                                    <label><input type="radio" name="radio-limb" value="Значение2" />
+                                        1</label>
+                                    <label><input type="radio" name="radio-limb" value="Значение3" />
+                                        2</label>
+                                    <label><input type="radio" name="radio-limb" value="Значение4" />
+                                        3</label>
+                                    <label><input type="radio" name="radio-limb" value="Значение5" />
+                                        4</label><br />
+                                    <label><input type="radio" name="radio-limb" value="Значение6" />
+                                        Более</label><br />
+
+                                    <label>
+                                        Суперсила:
+                                        <br />
+                                        <select>
+                                            <option value="" hidden disabled selected>Выбрать</option>
+                                            <option>бессмертие</option>
+                                            <option>прохождение сквозь стены</option>
+                                            <option>левитация</option>
+                                        </select>
+                                    </label><br />
+
+                                    <label>
+                                        Биография:<br />
+                                        <textarea name="bio" placeholder="Расскажите о себе"></textarea>
+                                    </label><br />
+
+                                    С контрактом ознакомлен:<br />
+                                    <label><input type="checkbox" name="check" />
+                                        ДА</label><br />
+
+                                    <input type="submit" value="Отправить" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__text">
+                        &copy;Права защищены <a href="vk.com/anton_biluta">итальяно</a>-армянской семьей
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
